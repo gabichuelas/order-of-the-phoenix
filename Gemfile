@@ -20,6 +20,8 @@ gem 'figaro'
 
 group :development, :test do
   gem 'pry'
+  gem 'irbtools'
+  gem 'table_print'
 end
 
 group :test do
