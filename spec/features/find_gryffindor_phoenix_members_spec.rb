@@ -27,6 +27,8 @@ RSpec.describe 'as a user' do
 
       within('#member-5a0fa7dcae5bc100213c2338') do
         expect(page).to have_content("Sirius Black")
+        expect(page).to have_content("Role: none listed!")
+        expect(page).to have_content("Patronus: none listed!")
       end
     end
   end
