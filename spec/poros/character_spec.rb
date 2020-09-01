@@ -16,7 +16,7 @@ RSpec.describe Character do
       :species=>"human"
     }
 
-    character = Character.new(hash)
+    character = Character.new(character_hash)
 
     expect(character.name).to eq("Sirius Black")
     expect(character.house).to eq("Gryffindor")
