@@ -2,7 +2,7 @@
 <p> <%= @members.count %> members</p>
 
 <% @members.each do |member| %>
-  <div class='member-details'>
+  <div class='member-details' id="member-<%= member.id %>">
     <h4 class='name'><%= member.name %></h4>
     <ul>
       <li class='house'>House: <%= member.house %></li>

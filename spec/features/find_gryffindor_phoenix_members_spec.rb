@@ -24,6 +24,10 @@ RSpec.describe 'as a user' do
         expect(page).to have_css('.house')
         expect(page).to have_css('.patronus')
       end
+
+      within('#member-5a0fa7dcae5bc100213c2338') do
+        expect(page).to have_content("Sirius Black")
+      end
     end
   end
 end
