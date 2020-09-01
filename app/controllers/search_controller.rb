@@ -1,5 +1,9 @@
 class SearchController < ApplicationController
   def index
+
+    # GIVEN MORE TIME, WOULD REFACTOR THIS INTO SERVICE CLASS
+    # AND SEARCH RESULTS FACADE
+    
     @house = params[:house]
 
     conn = Faraday.new("https://www.potterapi.com/v1/") do |req|
