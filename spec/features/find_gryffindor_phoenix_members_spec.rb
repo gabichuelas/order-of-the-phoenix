@@ -5,7 +5,7 @@ RSpec.describe 'as a user' do
 
       visit '/'
       select 'Gryffindor', from: :house
-      click_on 'Search for Members'
+      click_on 'Search For Members'
     end
 
     it 'return total number of Order of the Phoenix members that belong to Gryffindor (21)' do
