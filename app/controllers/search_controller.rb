@@ -1,5 +1,5 @@
 class SearchController < ApplicationController
   def index
-    require "pry"; binding.pry
+    @house = params[:house]
   end
 end

@@ -1,1 +1,13 @@
-<h2>Order of the Phoenix Members: </h2>
+<h2>Order of the Phoenix Members: <%= @house %></h2>
+<p> <%= @members.count %> members</p>
+
+<% @members.each do |member| %>
+  <div class='member-details'>
+    <h4 class='name'><%= member.name %></h4>
+    <ul>
+      <li class='role'><%= member.role %></li>
+      <li class='house'><%= member.house %></li>
+      <li class='patronus'><%= member.patronus %></li>
+    </ul>
+  </div>
+<% end %>

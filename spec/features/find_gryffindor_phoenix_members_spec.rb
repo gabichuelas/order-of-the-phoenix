@@ -11,6 +11,7 @@ RSpec.describe 'as a user' do
     it 'return total number of Order of the Phoenix members that belong to Gryffindor (21)' do
       #
       expect(current_path).to eq(search_path)
+      save_and_open_page
       expect(page).to have_content('21 members')
     end
 
